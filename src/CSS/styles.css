@@ -1,0 +1,37 @@
+:root,
+root [data-theme= 'dark'] {
+    --primary-bg-color: #111217;
+    --text-color: #F0F0F0;
+}
+
+:root[data-theme= 'light'] {
+    --primary-bg-color: #E9E9E9;
+    --text-color: #0B080F;
+}
+
+body{
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
+header{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+ul {
+    display: flex;
+}
+
+ul li{
+    padding: 0rem 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+#icon-theme{
+    cursor: pointer;
+}
